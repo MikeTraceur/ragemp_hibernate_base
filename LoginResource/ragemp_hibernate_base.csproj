@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AssemblyName>ragemp_hibernate_base</AssemblyName>
+    <RootNamespace>ragemp_hibernate_base</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -49,7 +51,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="del &quot;E:\RAGEMP\server-files\dotnet\resources\LoginResource\*.*&quot; /Q&#xD;&#xA;xcopy &quot;$(OutDir)*&quot; &quot;E:\RAGEMP\server-files\dotnet\resources\LoginResource&quot; /Y" />
+    <Exec Command="del &quot;E:\RAGEMP\server-files\dotnet\resources\ragemp_hibernate_base\*.*&quot; /Q&#xD;&#xA;xcopy &quot;$(OutDir)*&quot; &quot;E:\RAGEMP\server-files\dotnet\resources\ragemp_hibernate_base&quot; /Y" />
   </Target>
 
 </Project>

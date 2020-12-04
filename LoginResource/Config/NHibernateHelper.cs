@@ -34,7 +34,7 @@ namespace LoginResource.Config
             return Fluently.Configure()
                 .Database(
                     MySQLConfiguration.Standard.ConnectionString(
-                        c => c.Is("Server=localhost; Port=3306; Database=unityrp; Uid=root; Pwd=PASSWORD;CharSet=utf8")
+                        c => c.Is("Server=localhost; Port=3306; Database=ragerp; Uid=root; Pwd=PASSWORD;CharSet=utf8")
                     )
                 )
                 .Cache(
